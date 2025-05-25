@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> <!-- FontAwesome for icons -->
+    <style>
+        /* Body Styling */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #0A192F, #1B3A4B);
+            color: white;
+        }
+
+        /* Navbar */
+        .navbar {
+            background: linear-gradient(135deg, #0F2027, #203A43);
+            padding: 15px;
+            border-bottom: 2px solid #162447;
+        }
+
+        .navbar-nav .nav-link {
+            font-size: 1.1rem;
+            transition: all 0.3s ease-in-out;
+            color: white;
+            padding: 10px;
+            text-transform: uppercase;
+        }
+
+        .navbar-nav .nav-link:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+        }
+
+        /* Main Wrapper */
+        .main-wrapper {
+            margin: auto;
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .main-content {
+            flex: 1;
+            padding: 40px;
+            text-align: center;
+        }
+
+        /* Contact Form */
+        .contact-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .form-wrapper {
+            max-width: 500px;
+            width: 100%;
+            background: linear-gradient(135deg, #1C3D5A, #1E485B);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.4);
+            text-align: left;
+        }
+
+        .form-label {
+            font-weight: bold;
+            font-size: 1rem;
+        }
+
+        .form-control {
+            background-color: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: white;
+            padding: 12px;
+            font-size: 1rem;
+            border-radius: 8px;
+        }
+
+        .form-control::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .btn-custom {
+            background-color: #0084ff;
+            color: white;
+            font-weight: bold;
+            border: none;
+            width: 100%;
+            padding: 12px;
+            font-size: 1rem;
+            border-radius: 8px;
+            transition: background 0.3s;
+        }
+
+        .btn-custom:hover {
+            background-color: #006ecc;
+        }
+
+        /* Footer */
+        footer {
+            width: 100%;
+            background: linear-gradient(135deg, #0F2027, #203A43);
+            padding: 20px;
+            text-align: center;
+            color: white;
+            font-size: 14px;
+            box-shadow: 0px -3px 10px rgba(0, 0, 0, 0.4);
+            position: relative;
+        }
+
+        /* Social Media Icons */
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            font-size: 24px;
+            color: white;
+            text-decoration: none;
+            transition: transform 0.3s;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.1);
+        }
+
+        /* Theme Colors for Social Media */
+        .whatsapp { background-color: #25D366; }
+        .linkedin { background-color: #0077b5; }
+        .github { background-color: #24292e; }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="skill.html">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="project.html">Project</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-wrapper">
+        <div class="main-content">
+            <h2>Contact Us</h2>
+            <div class="contact-container">
+                <div class="form-wrapper">
+                    <form action="contact_process.php" method="post">
+                        <label for="name" class="form-label">Name</label><br>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+
+                        <br><br>
+
+                        <label for="email" class="form-label">Email</label><br>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+
+                        <br><br>
+
+                        <label for="phone" class="form-label">Phone Number</label><br>
+                        <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+                        <br><br>
+
+                        <button type="submit" class="btn btn-custom">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer with Social Media Buttons -->
+    <footer>
+        <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="https://wa.me/9495452423" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.linkedin.com/in/hrishikesh-s-s-0473a7290" class="linkedin"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/kannangithu" class="github"><i class="fab fa-github"></i></a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
