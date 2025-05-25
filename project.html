@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Projects</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    /* Body Styling */
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #141E30, #243B55);
+      color: white;
+    }
+
+    /* Navbar Styling */
+    .navbar {
+      background: linear-gradient(135deg, #0F2027, #203A43);
+      padding: 15px;
+      border-bottom: 2px solid #162447;
+    }
+
+    .navbar-nav .nav-link {
+      font-size: 1.1rem;
+      transition: all 0.3s ease-in-out;
+      color: white;
+      padding: 10px;
+      text-transform: uppercase;
+    }
+
+    .navbar-nav .nav-link:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 5px;
+    }
+
+    /* Main Wrapper */
+    .main-wrapper {
+      margin: auto;
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .main-content {
+      flex: 1;
+      padding: 40px;
+      text-align: center;
+    }
+
+    /* Card Styling */
+    .card-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .project-card {
+      width: 280px;
+      background-color: #3D2C8D;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      cursor: pointer;
+      border: none;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .project-card:hover {
+      transform: scale(1.05) translateY(-10px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn-custom {
+      background-color: #D4AF37;
+      color: #000;
+      font-weight: bold;
+      border: none;
+    }
+
+    .btn-custom:hover {
+      background-color: #C4A233;
+    }
+
+    /* Footer Styling */
+    footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100vw;
+      background: linear-gradient(135deg, #0F2027, #203A43);
+      padding: 15px;
+      text-align: center;
+      color: white;
+      font-size: 14px;
+      box-shadow: 0px -3px 10px rgba(0, 0, 0, 0.4);
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="skill.html">Skills</a></li>
+          <li class="nav-item"><a class="nav-link active" href="project.html">Project</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="main-wrapper">
+    <div class="main-content">
+      <h2>My Projects</h2>
+      <div class="card-container">
+        <!-- Card 1: Web Design -->
+        <div class="card project-card">
+          <div class="card-body">
+            <h5 class="card-title">Web Design</h5>
+            <p class="card-text">Creative UI/UX and responsive web pages.</p>
+            <a href="https://kannangithu.github.io/Personal-Website/" class="btn btn-custom">View More</a>
+          </div>
+        </div>
+
+        <!-- Card 2: Arduino Robot -->
+        <div class="card project-card">
+          <div class="card-body">
+            <h5 class="card-title">Arduino Robot</h5>
+            <p class="card-text">IoT and robotics projects with Arduino.</p>
+            <a href="car.JPG" class="btn btn-custom">View More</a>
+          </div>
+        </div>
+
+        <!-- Card 3: Battery Boat -->
+        <div class="card project-card">
+          <div class="card-body">
+            <h5 class="card-title">Battery Boat</h5>
+            <p class="card-text">Efficient energy-powered boat design.</p>
+            <a href="kannan.JPG" class="btn btn-custom">View More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Hrishikesh S S. All Rights Reserved.</p>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

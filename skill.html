@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        /* General Body Styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #141E30, #243B55);
+            color: white;
+            margin: 0;
+            padding-bottom: 60px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            background: linear-gradient(135deg, #0F2027, #203A43);
+            padding: 15px;
+            border-bottom: 2px solid #162447;
+        }
+
+        .navbar-nav {
+            display: flex;
+            justify-content: flex-start; /* Aligns nav items to the left */
+        }
+
+        .navbar-nav .nav-link {
+            font-size: 1.1rem;
+            transition: all 0.3s ease-in-out;
+            color: white;
+            padding: 10px;
+            text-transform: uppercase;
+        }
+
+        .navbar-nav .nav-link:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+        }
+
+        /* Main Wrapper */
+        .main-wrapper {
+            width: 80%;
+            margin: auto;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .main-content {
+            flex: 1;
+            padding: 40px;
+            text-align: center;
+        }
+
+        /* Centered Skills Title */
+        h2 {
+            text-align: center;
+            margin-bottom: 30px; /* Adds space below the title */
+        }
+
+        /* Skills Section */
+        .skills-container {
+            display: flex;
+            justify-content: flex-start; /* Aligns the list to the left */
+            text-align: left;
+            margin: auto;
+            width: 50%; /* Controls width for readability */
+        }
+
+        .skills-list {
+            list-style-type: disc; /* Bullet points */
+            list-style-position: outside; /* Moves bullets to the far left */
+            font-size: 1.2rem;
+            line-height: 2;
+            padding-left: 0; /* Aligns closer to the left margin */
+        }
+
+        .skills-list li {
+            margin-bottom: 15px; /* Adds space between each skill */
+        }
+
+        /* Footer Styling */
+        footer {
+            width: 100%;
+            background: linear-gradient(135deg, #0F2027, #203A43);
+            padding: 15px 0;
+            text-align: center;
+            color: white;
+            font-size: 14px;
+            box-shadow: 0px -3px 10px rgba(0, 0, 0, 0.4);
+            position: relative;
+            margin-top: auto; /* Ensures footer stays at the bottom */
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .main-wrapper {
+                width: 95%;
+            }
+            .skills-container {
+                width: 80%; /* Adjust width for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link text-uppercase px-3" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link active text-uppercase px-3" href="skill.html">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link text-uppercase px-3" href="project.html">Project</a></li>
+                    <li class="nav-item"><a class="nav-link text-uppercase px-3" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Page Wrapper -->
+    <div class="main-wrapper">
+        <!-- Content -->
+        <div class="main-content">
+            <h2>My Skills</h2>
+            <div class="skills-container">
+                <ul class="skills-list">
+                    <li>C</li>
+                    <li>C++</li>
+                    <li>JavaScript</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Kali Linux</li>
+                    <li>Python</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="container-fluid bg-dark text-white py-3">
+        <div class="row justify-content-center">
+            <div class="col-md-6 text-center">
+                <p>&copy; 2025 Hrishikesh S S. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

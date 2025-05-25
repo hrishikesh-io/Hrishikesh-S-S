@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <style>
+        /* Body Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #141E30, #243B55); /* Deep navy gradient */
+            color: white;
+            margin: 0;
+            padding-bottom: 60px;
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            background: linear-gradient(135deg, #0F2027, #203A43);
+            padding: 15px;
+            border: none;
+        }
+
+        /* Container Styling */
+        .container {
+            max-width: 700px;
+            margin: auto;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 10px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Name Styling */
+        .name-section {
+            font-size: 32px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        /* About Heading Underlined */
+        .section-heading {
+            font-size: 24px;
+            text-decoration: underline;
+            margin-bottom: 20px;
+        }
+
+        /* Responsive Text for Mobile */
+        @media (max-width: 768px) {
+            .name-section {
+                font-size: 26px;
+            }
+            .section-heading {
+                font-size: 22px;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+
+        /* Centered Instagram Button */
+        .instagram-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .instagram-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(45deg, #E1306C, #F77737, #FFDC80);
+            color: white;
+            font-weight: bold;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 50px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .instagram-btn img {
+            width: 24px;
+            margin-right: 8px;
+        }
+
+        .instagram-btn:hover {
+            opacity: 0.8;
+        }
+
+        /* Footer */
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: linear-gradient(135deg, #0F2027, #203A43);
+            padding: 15px;
+            text-align: center;
+            color: white;
+            font-size: 14px;
+            box-shadow: 0px -3px 10px rgba(0, 0, 0, 0.4);
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="skill.html">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="project.html">Project</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Name Section -->
+    <div class="container">
+        <div class="name-section">Hrishikesh S S</div>
+        
+        <section id="about">
+            <h4 class="section-heading">About Me</h4>
+            <p>I studied at IHRD Puthuppally from 8th to 12th grade, developing my foundation in programming and technology. 
+            My skills include C, C++, Python, JavaScript, HTML, and CSS. Currently, I’m refining my expertise in Kali Linux. 
+
+            My ambition is to become a Cyber Forensic Officer specializing in digital investigations and ethical hacking. 
+            I plan to pursue a B.Tech degree to deepen my technical expertise. Cybersecurity excites me, and I constantly explore innovations in ethical hacking and forensics.</p>
+        </section>
+
+        <!-- Centered Instagram Button -->
+        <div class="instagram-container">
+            <a href="https://instagram.com/____hrishi___kesh__?utm_source=qr&igshid=OGIxMTE0OTdkZA==" target="_blank" class="instagram-btn">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Icon">
+                Follow me on Instagram
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Hrishikesh S S. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
